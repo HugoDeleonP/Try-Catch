@@ -15,7 +15,6 @@ public class Viewer {
 	    System.out.println("| 3- Exercício 3                                |");
 	    System.out.println("| 4- Exercício 4                                |");
 	    System.out.println("| 5- Exemplo: Entrada de número                 |");
-	    System.out.println("| 6- Exemplo: Repetição até digitar certo       |");	    
 	    System.out.println("|                                               |");
 	    System.out.println("| 0- Sair                                       |");
 	    System.out.println("-===============================================-");

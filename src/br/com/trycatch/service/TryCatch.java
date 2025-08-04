@@ -62,13 +62,11 @@ public class TryCatch {
 			
 			do {
 				String nome = view.inputNome();
-				String precoString = view.inputPreco();
-				System.out.println("Preço: " + precoString);
-				
+				String precoString = view.inputPreco();				
 				try {
 					double precoDouble = Double.parseDouble(precoString);
-					
 					entradaValida = true;
+					System.out.println("Preço: " + precoString);
 				} catch(NumberFormatException e){
 					System.out.println("Digite um valor válido!");
 				}
@@ -78,6 +76,74 @@ public class TryCatch {
 		
 		case 4 ->{
 			
+			boolean entradaValida = true;
+			int escolhaMenu = -1;
+			
+			
+			do {
+				System.out.println("-================Teste Try-Catch================-");
+			    System.out.println("| 1- Teste 1                                    |");
+			    System.out.println("| 2- Teste 2                                    |");
+			    System.out.println("| 3- Teste 3                                    |");
+			    System.out.println("| 4- Teste 4                                    |");
+			    System.out.println("| 5- Teste 5                                    |");
+			    System.out.println("|                                               |");
+			    System.out.println("| 0- Sair                                       |");
+			    System.out.println("-===============================================-");
+			    
+			    Scanner input = new Scanner(System.in);
+			    			    
+			    try {
+			    	
+				    escolhaMenu = Integer.parseInt(input.nextLine());
+
+			    	
+			    	switch(escolhaMenu) {
+			    	
+			    	case 0 -> {
+			    		System.out.println("Saindo...");
+			    		return;
+			    	}
+				    
+				    case 1 -> {
+				    	System.out.println("Teste 1 funcionando");	
+				    }
+				    
+				    case 2 -> {
+				    	System.out.println("Teste 2 funcionando");	
+
+				    }
+				    
+				    case 3 -> {
+				    	System.out.println("Teste 3 funcionando");	
+
+				    }
+				    
+				    case 4 -> {
+				    	System.out.println("Teste 4 funcionando");	
+
+				    }
+				    
+				    case 5 -> {
+				    	System.out.println("Teste 5 funcionando");	
+
+				    }
+				    
+				    default ->{
+				    	System.out.println("Digite uma opção válida");
+				    }
+				    
+				    }
+				    
+			    }
+			    catch(Exception e) {
+			    	System.err.println("Erro. Tente novamente");
+			    }
+			    
+			    
+			} while(escolhaMenu != 0);
+			
+						
 		}
 		
 		case 5 ->{
